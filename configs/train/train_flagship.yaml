@@ -1,0 +1,23 @@
+train:
+  epochs: 20
+  optimizer: adamw
+  lr_image: 1e-5
+  lr_text: 1e-5
+  lr_projection: 1e-4
+  weight_decay: 0.01
+  scheduler: cosine
+  warmup_steps: 1000
+  grad_clip_norm: 1.0
+  gradient_accumulation_steps: 2
+  early_stopping_metric: val_r_at_10_t2i
+  early_stopping_mode: max
+  early_stopping_patience: 4
+
+loss:
+  name: clip_symmetric_infonce
+  label_smoothing: 0.0
+  hard_negative_mining:
+    enabled: true
+    strategy: in_batch_topk_semantic
+    topk: 5
+    start_epoch: 3

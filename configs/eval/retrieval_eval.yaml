@@ -1,0 +1,14 @@
+eval:
+  ks: [1, 5, 10]
+  metrics:
+    - recall_at_k
+    - map
+    - mrr
+    - ndcg_at_k
+  directions:
+    - text_to_image
+    - image_to_text
+  multilingual_breakdown: true
+  output_file: reports/tables/retrieval_metrics.json
+  num_queries: null            # null = use all queries
+  corpus_size: null            # null = use full corpus

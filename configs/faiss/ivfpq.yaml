@@ -1,0 +1,11 @@
+faiss:
+  index_type: IVF_PQ
+  embedding_dim: 512
+  normalize: true
+  nlist: 256              # number of IVF clusters
+  m: 32                   # number of PQ sub-quantizers
+  nbits: 8                # bits per sub-quantizer
+  nprobe: 16              # clusters to search at query time
+  train_size: 100000      # vectors to train the index on
+  index_path: data/artifacts/faiss_ivfpq.index
+  metadata_path: data/artifacts/faiss_ivfpq_metadata.parquet

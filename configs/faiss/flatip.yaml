@@ -1,0 +1,6 @@
+faiss:
+  index_type: IndexFlatIP
+  embedding_dim: 512
+  normalize: true
+  index_path: data/artifacts/faiss_flatip.index
+  metadata_path: data/artifacts/faiss_flatip_metadata.parquet

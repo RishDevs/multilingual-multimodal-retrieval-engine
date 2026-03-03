@@ -1,0 +1,9 @@
+eval:
+  latency:
+    num_warmup_queries: 100
+    num_benchmark_queries: 1000
+    batch_sizes: [1, 16, 64, 256]
+    corpus_sizes: [10000, 100000, 1000000]
+    top_k: 10
+    percentiles: [50, 95, 99]
+    report_file: reports/tables/latency_report.json

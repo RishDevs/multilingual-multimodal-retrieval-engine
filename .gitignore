@@ -1,0 +1,74 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Data & Models
+data/raw/*
+data/interim/*
+data/processed/*
+data/artifacts/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/artifacts/.gitkeep
+outputs/checkpoints/*
+outputs/logs/*
+!outputs/checkpoints/.gitkeep
+!outputs/logs/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.h5
+*.faiss
+*.index
+
+# Jupyter Notebook
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Reports
+reports/figures/*
+reports/tables/*
+reports/experiment_logs/*
+!reports/figures/.gitkeep
+!reports/tables/.gitkeep
+!reports/experiment_logs/.gitkeep

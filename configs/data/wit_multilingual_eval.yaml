@@ -1,0 +1,25 @@
+data:
+  dataset_name: wit
+  subset_manifest: data/interim/wit_multilingual_eval_manifest.parquet
+  image_root: data/raw/images/
+  text_fields:
+    - caption_reference_description
+    - caption_attribution_description
+  languages:
+    - en
+    - hi
+    - es
+    - fr
+    - de
+    - pt
+    - ja
+    - zh
+    - ar
+    - ru
+  max_text_len: 64
+  image_size: 224
+  eval_batch_size: 256
+  num_workers: 8
+  pin_memory: true
+  cross_lingual_eval: true
+  samples_per_language: 1000

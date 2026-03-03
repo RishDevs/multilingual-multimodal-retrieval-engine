@@ -1,0 +1,18 @@
+train:
+  epochs: 10
+  optimizer: adamw
+  lr: 1e-4
+  weight_decay: 0.01
+  scheduler: cosine
+  warmup_steps: 500
+  grad_clip_norm: 1.0
+  gradient_accumulation_steps: 1
+  early_stopping_metric: val_r_at_10_t2i
+  early_stopping_mode: max
+  early_stopping_patience: 5
+
+loss:
+  name: triplet
+  margin: 0.2
+  hard_negative_mining:
+    enabled: false

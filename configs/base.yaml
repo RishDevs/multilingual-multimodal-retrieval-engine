@@ -1,0 +1,16 @@
+project:
+  name: multilingual-multimodal-retrieval-wit
+  seed: 42
+  output_dir: outputs/
+  experiment_name: vit_xlmr_clipstyle_run01
+
+device:
+  accelerator: cuda    # auto | cuda | mps | cpu
+  mixed_precision: fp16
+
+logging:
+  use_wandb: true
+  use_tensorboard: true
+  log_every_n_steps: 50
+  save_top_k: 3
+  project_name: multilingual-multimodal-retrieval-wit

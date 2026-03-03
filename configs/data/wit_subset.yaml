@@ -1,0 +1,27 @@
+data:
+  dataset_name: wit
+  subset_manifest: data/interim/wit_subset_manifest.parquet
+  image_root: data/raw/images/
+  text_fields:
+    - caption_reference_description
+    - caption_attribution_description
+    - hierarchical_section_title
+    - page_title
+  languages:
+    - en
+    - hi
+    - es
+    - fr
+    - de
+    - pt
+  max_text_len: 64
+  image_size: 224
+  train_batch_size: 128
+  eval_batch_size: 256
+  num_workers: 8
+  pin_memory: true
+  balanced_language_sampling: true
+  subset_size: 500000       # number of pairs for main training
+  debug_size: 10000         # small subset for debugging
+  min_text_length: 5        # minimum characters in text field
+  remove_duplicates: true

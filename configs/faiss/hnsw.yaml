@@ -1,0 +1,9 @@
+faiss:
+  index_type: HNSW
+  embedding_dim: 512
+  normalize: true
+  M: 32                   # number of connections per element
+  ef_construction: 200    # search depth during construction
+  ef_search: 128          # search depth during query
+  index_path: data/artifacts/faiss_hnsw.index
+  metadata_path: data/artifacts/faiss_hnsw_metadata.parquet

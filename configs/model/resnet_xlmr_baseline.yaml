@@ -1,0 +1,22 @@
+model:
+  image_encoder:
+    name: resnet50
+    pretrained: true
+    trainable_layers: all
+    output_dim: 2048
+
+  text_encoder:
+    name: microsoft/Multilingual-MiniLM-L12-H384
+    pretrained: true
+    pooling: cls
+    output_dim: 384
+
+  projection_head:
+    embedding_dim: 256
+    hidden_dim: 512
+    dropout: 0.1
+    l2_normalize: true
+
+  temperature:
+    init_value: 0.07
+    learnable: false
