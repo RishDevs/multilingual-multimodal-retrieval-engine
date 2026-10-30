@@ -1,3 +1,5 @@
+<img src=".github/header.svg" width="100%" alt="multilingual-multimodal-retrieval-engine — Multimodal Retrieval — README header">
+
 # 🌍 Multilingual Multimodal Retrieval Engine (Google WIT)
 
 ### CLIP-Style Dual Encoder + Hard Negative Mining + FAISS ANN Search
